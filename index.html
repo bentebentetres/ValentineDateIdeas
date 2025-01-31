@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Date Idea Generator</title>
     <link rel="stylesheet" href="styles.css">
-    <title>valentineProject
-    </title>
 </head>
 <body>
-    <header class="header">
-        <h1>VELENTINES</h1>
+    <header>
+        <h1 class="head-Title">Valentines Day Date Idea</h1>
     </header>
+    <div class="container">
+        <h1 id="date-idea">Click the button for a date idea!</h1>
+        <button onclick="generateIdea()">Generate</button>
+    </div>
+
+    <div class="container2">
+        <h1 id="Single">If you're single, this button is for you.</h1>
+        <button onclick="generateIdeaSingle()" class="button2">Generate</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
