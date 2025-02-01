@@ -4,7 +4,7 @@ const dateIdeas = [
     "Magpalunod.",
     "Sabay na tumalon sa tulay.",
     "Give flowers and chocolates.",
-    "Bemband Ultimate Pro Max",
+    "Bembang Ultimate Pro Max",
     "Bembang"
 ];
 
