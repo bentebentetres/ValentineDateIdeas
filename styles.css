@@ -4,32 +4,32 @@ body {
     background-color: #443535;
     padding: 50px;
     font-family: 'Courier New', Courier, monospace;
-    background-image: url("images/loveBackgound.jpg");
+    background-image: url("images/valen.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .head-Title {
-    color: #ff5f5f;
+    color: #e20909;
     font-size: 5rem;
+    background-color: #5fff6c;
 }
 
 .head-Title:hover {
-    color: #5fff6c;
+    color: #2600ff;
 }
 
 .container {
     background: rgb(255, 251, 251);
-    margin-top: 50px;
-    padding: 20px;
+    margin-top: 5rem;
+    padding: 2rem;
     display: block;
     width: 70rem;
     margin-left: auto;
     margin-right: auto;
     height: 10rem;
     text-align: center;
-    
 }
 
 .container2 {
@@ -42,9 +42,7 @@ body {
     margin-right: auto;
     height: 10rem;
     text-align: center;
-    
 }
-
 
 button {
     margin-top: 20px;
@@ -65,4 +63,54 @@ button {
 
 button:hover {
     background-color: #ff4242;
+}
+.heart {
+    position: fixed;
+    bottom: 50px; /* Start position */
+    left: 50%;
+    font-size: 2rem;
+    color: red;
+    animation: floatUp 2s ease-out forwards;
+    opacity: 1;
+}
+
+
+/* Media Query for Tablets and Mobile Devices */
+@media (max-width: 768px) {
+    .head-Title {
+        font-size: 3rem; /* Smaller font size for smaller screens */
+    }
+
+    .container, .container2 {
+        width: 90%; /* Make the containers take up more width on small screens */
+        margin-left: auto;
+        margin-right: auto;
+        height: auto; /* Allow the containers to resize based on content */
+    }
+
+    button {
+        font-size: 14px; /* Smaller button font size */
+        padding: 8px 16px; /* Smaller padding for buttons */
+    }
+
+    .container, .container2 {
+        padding: 1rem; /* Less padding on smaller screens */
+    }
+}
+
+/* Media Query for Small Mobile Devices */
+@media (max-width: 480px) {
+    .head-Title {
+        font-size: 2rem; /* Even smaller font size for very small screens */
+    }
+
+    button {
+        font-size: 12px; /* Even smaller button font size */
+        padding: 6px 12px; /* Smaller padding for buttons */
+    }
+
+    .container, .container2 {
+        width: 100%; /* Make the containers take up the full width */
+        padding: 0.5rem; /* Further reduce padding */
+    }
 }
